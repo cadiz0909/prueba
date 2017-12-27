@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Test de load</h1>
+<p>pagina externa con script</p>
+<button id="b">test</button>
+
+<script type="text/javascript">
+   (function(){
+       var app={
+           init: function(){
+              
+              $('#b').off('click').on('click', function() {
+                     alert("Hola mundo cruel");
+                     
+                  });
+               
+           }
+       };
+       
+       $(document).ready(app.init());
+       
+   })();
+	
+	</script>
+
+</body>
+</html>
+

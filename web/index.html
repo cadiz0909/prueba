@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Principal</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Pagina de inicio</h1>
+<p>Enlaces a las diferentes paginas</p>
+<button class="pg1">Pg1</button>
+<div id="contenido"></div>
+<script type="text/javascript">
+	$('.pg1').click( function(){
+		alert("entro");
+     $('#contenido').load("pagina1.html");
+	});
+</script>
+</body>
+</html>
